@@ -1,4 +1,4 @@
-package eu.traumtor.pool.plsplugin
+package eu.traumtor.pool.intellij.plugin
 
 import com.intellij.execution.configurations.GeneralCommandLine
 import com.intellij.openapi.module.ModuleManager

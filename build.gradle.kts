@@ -2,7 +2,6 @@ plugins {
   id("java")
   id("org.jetbrains.kotlin.jvm") version "1.9.21"
   id("org.jetbrains.intellij.platform") version "2.3.0"
-//  id("org.jetbrains.intellij") version "1.17.4"
 }
 
 group = "eu.traumtor.pool"
@@ -22,17 +21,6 @@ dependencies {
   }
 }
 
-/*
-// Configure Gradle IntelliJ Plugin
-// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
-intellij {
-  version = "2024.3.4"
-  type.set("IU") // Target IDE Platform
-
-  plugins.set(listOf(/* Plugin Dependencies */))
-}
-*/
-
 tasks {
   // Set the JVM compatibility versions
   withType<JavaCompile> {
@@ -45,8 +33,6 @@ tasks {
 
   patchPluginXml {
     sinceBuild.set("243")
-//    sinceBuild.set("233")
-//    untilBuild.set("241.*")
   }
 
   signPlugin {
