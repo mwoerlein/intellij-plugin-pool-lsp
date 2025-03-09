@@ -29,5 +29,12 @@
     <!-- LSP -->
     <platform.lsp.serverSupportProvider implementation="eu.traumtor.pool.intellij.plugin.PoolLspServerSupportProvider"/>
 
+    <!-- UI -->
+    <projectConfigurable id="settings.poollsp"
+                         groupId="language"
+                         instance="eu.traumtor.pool.intellij.plugin.PoolLspSettingsConfigurable"
+                         displayName="Pool"
+                         nonDefaultProject="true"
+    />
   </extensions>
 </idea-plugin>
